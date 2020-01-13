@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/d_3_5_7_10"
+        android:layout_height="@dimen/d_50_60_70"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:layout_width="0dp"
+            android:id="@+id/add_item"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:layout_weight="2"
+            android:src="@drawable/ic_add_shopping_cart_pink_700_48dp"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:id="@+id/items"
+            android:layout_height="match_parent"
+            android:background="@color/AliceBlue"
+            android:text="@string/products"
+            android:layout_weight="10"
+            android:textSize="@dimen/s_18_20_24" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/d_90_100_120"
+        android:layout_marginEnd="@dimen/d_90_100_120"
+        android:background="@color/colorPrimary"
+        >
+
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/d_3_5_7_10"
+        android:layout_height="@dimen/d_50_60_70"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:layout_width="0dp"
+            android:id="@+id/add_group"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:layout_weight="2"
+            android:scaleType="centerInside"
+            android:src="@drawable/trolley"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:id="@+id/groups"
+            android:layout_height="match_parent"
+            android:text="@string/group"
+            android:background="@color/AliceBlue"
+            android:layout_weight="10"
+            android:textSize="@dimen/s_18_20_24" />
+
+    </LinearLayout>
+
+</LinearLayout>
+    <!--<include layout="@layout/content_main" />-->
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_margin="@dimen/fab_margin"-->
+        <!--app:srcCompat="@android:drawable/ic_input_add"-->
+        <!--app:borderWidth="@dimen/d_2_3_4"-->
+        <!--app:fabSize="normal"-->
+        <!--app:fabCustomSize="@dimen/d_60_70_90"-->
+        <!--/>-->
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="i_100_150_200">100</integer>
+    <integer name="i_50_80_100" >50</integer>
+</resources>
